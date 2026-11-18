@@ -1,0 +1,14 @@
+body{
+    background-color: #ffffff;
+    color: #222222;
+    font-family: sans-serif;
+}
+.work{
+    width: 50%;
+    margin: 0 auto 100px;
+}
+.works img{
+    width: 95%;
+    display:block;
+    margin: 0 auto;
+}
