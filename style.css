@@ -3,12 +3,54 @@ body{
     color: #222222;
     font-family: sans-serif;
 }
+.works{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
 .work{
-    width: 50%;
-    margin: 0 auto 100px;
+    width: 100%;
+}
+.work p{
+    transition: color 0.1s ease;
 }
 .works img{
-    width: 95%;
-    display:block;
-    margin: 0 auto;
+    width: 100%;
+    display: block;
+    transition: opacit 0.3s ease;
+}
+.work a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.work a:hover img{
+    opacity: 0.8;
+}
+.work a:hover p{
+    color: #999999;
+}
+#lightbox {
+  border: none;
+  background: transparent;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+#lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: block;
+}
+
+@media (max-width: 768px){
+    .works{
+        grid-template-columns: 1fr;
+    }
 }

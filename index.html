@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <meta charset="="UTF-8">
-        <meta name=""viewport"
-        content="width=device-width, initial-scale=1.0">
-        <title>MY WORKS</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8"><!--文字化け対策-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--見る画面似合わせて自動で縮小・調整してくれる-->
+        <title>MY WORKS</title><!--タイトル-->
+        <link rel="stylesheet" href="./style.css"><!--デザインはstyle.cssを使う-->
     </head>
     <body>
-
-        <header>
-            <h1>MY WORKS</h1>
+        <header><!--見出しを書く場所に-->
+            <h1>MY WORKS</h1><!--見出し語を書く-->
         </header>
         <main>
-            <section class="works">
-                <article class="works">
-                    <a>
-                        <img src="./images/0001.png" alt="作品1">
-                        <h2>WORK 01</h2>
+            <section class="works"><!--箱にworksという名前をつける-->
+                <article class="work"><!--箱の中身の独立した箱にworkという名前をつける-->
+                    <a href="./images/0001.png"><!--この中の文字と画像をクリックできるリンクにする-->
+                        <img src="./images/0001.png" alt="作品1"><!--画像を表示し、その画像のSourceの相対パスと、何らかの理由で画像が表示されなかったときや音声読み上げソフトが説明するための代替テキスト-->
+                        <p>Gaming Room</p> <!--段落-->
                     </a>
-                    <p>作成日:2026/06/08</p>
                 </article>
-                <article class="works">
-                    <a>
+                <!--傘-->
+                <article class="work">
+                    <a href="./images/umbrella.png">   
                         <img src="./images/umbrella.png" alt="作品2">
-                        <h2>WORK 02</h2>
+                        <p>Umbrella</p>
                     </a>
-                    <p>作成日:2026/11/19</p>
                 </article>
 
             </section>
         </main>
+        <!--拡大表示-->
+        <dialog id="lightbox"><!--特別なHTMLタグ。普段は画面の後ろに隠れていて、呼び出されたときにだけ現れる-->
+            <img id="lightbox-img" src="" alt="拡大画像"><!--classは箱の名前でほぼ配列。idは固有名詞で変数？-->
+        </dialog>
 
         <script src="script.js"></script>
     </body>
