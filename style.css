@@ -38,6 +38,10 @@ body{
     color: inherit;
     display: block;
     outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.work a:focus{
+    outline:none;
 }
 .work a:hover img{
     opacity: 0.8;
