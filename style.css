@@ -1,5 +1,5 @@
 body{
-    background-color: #ffffff;
+    background-color: #f8eeff;
     color: #222222;
     font-family: sans-serif;
 }
@@ -30,15 +30,11 @@ body{
     width: 100%;
     display: block;
     transition: opacit 0.3s ease;
-    border:none;
-    outline:none;
 }
 .work a{
     text-decoration: none;
     color: inherit;
     display: block;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
 }
 .work a:focus{
     outline:none;
