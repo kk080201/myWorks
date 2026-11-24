@@ -1,11 +1,11 @@
 body{
-    background-color: #f8eeff;
+    background-color: #e3e3e3;
     color: #222222;
     font-family: sans-serif;
 }
 .head{
     width: 70%;
-    color: #8f3dc6;
+    color: #80c0cd;
     margin: 0 auto;
     margin-bottom: 50px;
     margin-top: 80px;
@@ -43,7 +43,7 @@ body{
     opacity: 0.8;
 }
 .work a:hover p{
-    color: #8f3dc6;
+    color: #80c0cd;
 }
 #lightbox {
   border: none;
